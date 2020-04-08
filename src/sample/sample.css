@@ -8,8 +8,3 @@
 -fx-font-size: 25;
 -fx-font-family: "Cambria", serif;
 }
-
-#primaryStage{
--fx-background-color: lightblue;
--fx-opacity: 0.3;
-}

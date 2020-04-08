@@ -9,22 +9,27 @@
 <?import javafx.scene.control.Label?>
 
 
+<?import javafx.scene.image.ImageView?>
 <GridPane fx:controller="sample.Controller"
           stylesheets="/sample/sample.css"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
 
     <padding>
-        <Insets top="30" right="20" bottom="30" left="25"/>
+        <Insets top="10" right="10" bottom="10" left="25"/>
     </padding>
 
-    <Text id="assignment-page-title" text = "Assignments"
+        <Label id="assignment-page-title" text = "Assignments"
           GridPane.columnIndex="0" GridPane.rowIndex="3"
           GridPane.columnSpan="2"/>
+    <HBox>
+        <ImageView></ImageView>
+        <VBox>
+            <Label id="assignments" text="Assignment # "
+               GridPane.columnIndex="6" GridPane.rowIndex="5"
+               GridPane.columnSpan="1" />
 
-    <Label id="assignments" text="Assignment # "
-           GridPane.columnIndex="6" GridPane.rowIndex="5"
-           GridPane.columnSpan="1" />
-
-    <Label id="due-date" text="Due Date: "
-           GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label id="due-date" text="Due Date: "
+               GridPane.columnIndex="6" GridPane.rowIndex="6" />
+        </VBox>
+    </HBox>
 </GridPane>

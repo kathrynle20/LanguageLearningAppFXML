@@ -14,10 +14,6 @@ public class Main extends Application {
         primaryStage.setTitle("Assignments Page");
         primaryStage.setScene(new Scene(root, 600, 700));
 
-        int amountOfAssignments = 5;
-        for (int assignmentNumber = 1; assignmentNumber <= amountOfAssignments; assignmentNumber++) {
-
-        }
         primaryStage.show();
     }
 
