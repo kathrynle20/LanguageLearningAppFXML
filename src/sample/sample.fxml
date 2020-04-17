@@ -1,35 +1,46 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
-<?import java.net.*?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 
-
-<?import javafx.scene.image.ImageView?>
-<GridPane fx:controller="sample.Controller"
-          stylesheets="/sample/sample.css"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+<GridPane alignment="center" hgap="10" stylesheets="/sample/sample.css" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller">
 
     <padding>
-        <Insets top="10" right="10" bottom="10" left="25"/>
+        <Insets bottom="10" left="25" right="10" top="10" />
     </padding>
 
-        <Label id="assignment-page-title" text = "Assignments"
-          GridPane.columnIndex="0" GridPane.rowIndex="3"
-          GridPane.columnSpan="2"/>
-    <HBox>
-        <ImageView></ImageView>
-        <VBox>
-            <Label id="assignments" text="Assignment # "
-               GridPane.columnIndex="6" GridPane.rowIndex="5"
-               GridPane.columnSpan="1" />
+        <Label id="assignment-page-title" text="Assignments" GridPane.columnIndex="0" GridPane.columnSpan="2" />
+    <VBox>
+        <HBox GridPane.rowIndex="3" fx:id="assignment1">
+            <ImageView fitHeight="50.0" fitWidth="100.0">
+                <Image url="https://www.learnupon.com/wp-content/uploads/assignments720.png" />
+             </ImageView>
+            <VBox>
+                <Label id="assignments1" text="Assignment #1 " GridPane.columnIndex="6" GridPane.columnSpan="1" GridPane.rowIndex="5" />
 
-            <Label id="due-date" text="Due Date: "
-               GridPane.columnIndex="6" GridPane.rowIndex="6" />
-        </VBox>
-    </HBox>
+                <Label id="due-date" text="Due Date: " GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            </VBox>
+        </HBox>
+        <HBox GridPane.rowIndex="3" fx:id="assignment2">
+            <ImageView fitHeight="50.0" fitWidth="100.0">
+                <Image url="https://www.learnupon.com/wp-content/uploads/assignments720.png" />
+            </ImageView>
+            <VBox>
+                <Label id="assignments2" text="Assignment #2" GridPane.columnIndex="6" GridPane.columnSpan="1" GridPane.rowIndex="5" />
+                <Label id="due-date" text="Due Date: " GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            </VBox>
+        </HBox>
+    </VBox>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
 </GridPane>
